@@ -1,6 +1,6 @@
 {
   "name": "architectonic-knowledge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runtime-neutral knowledge corpus package for Architectonic systems.",
   "license": "Apache-2.0",
   "type": "module",
