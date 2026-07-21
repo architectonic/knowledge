@@ -1,6 +1,6 @@
 {
   "name": "architectonic-knowledge",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Knowledge layer for claims, sources, evidence, uncertainty, contradictions, and known unknowns.",
   "license": "Apache-2.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "CHANGELOG.md",
     "architectonic.protocol.json",
     "knowledge.md",
+    "WHEN_TO_USE.md",
     "scripts"
   ],
   "scripts": {
