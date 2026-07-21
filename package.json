@@ -1,7 +1,7 @@
 {
   "name": "architectonic-knowledge",
-  "version": "0.1.2",
-  "description": "Runtime-neutral knowledge corpus package for Architectonic systems.",
+  "version": "0.2.0",
+  "description": "Knowledge layer for claims, sources, evidence, uncertainty, contradictions, and known unknowns.",
   "license": "Apache-2.0",
   "type": "module",
   "repository": {
@@ -13,13 +13,21 @@
   },
   "files": [
     "README.md",
-    "knowledge.md"
+    "CHANGELOG.md",
+    "architectonic.protocol.json",
+    "knowledge.md",
+    "scripts"
   ],
+  "scripts": {
+    "validate": "node scripts/validate-package.mjs",
+    "test": "npm run validate"
+  },
   "keywords": [
     "architectonic",
     "knowledge",
-    "aletheia",
-    "evidence",
-    "okf"
+    "human-ai",
+    "agents",
+    "provenance",
+    "governance"
   ]
 }
