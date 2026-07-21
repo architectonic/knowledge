@@ -1,36 +1,21 @@
 # Knowledge
 
-> **Status: experimental, pre-1.0.** This package defines one layer of the Architectonic protocol. Evaluate it through its canonical contract, package validator, conformance manifest, and explicit limitations.
+> **Status: experimental, pre-1.0.** This layer organizes disclosed claims, sources, evidence, uncertainty, contradictions, and known unknowns. It does not turn generated synthesis, memory, retrieval scores, or authority into truth.
 
-`knowledge` defines a readable, attributable, challengeable, and revisable corpus for agents and humans.
-
-## What it gives an agent
-
-- one predictable home for this concern;
-- a canonical entry that can be found through `architectonic map`;
-- a machine-readable `architectonic.protocol.json`;
-- boundaries that prevent neighboring layers from silently owning the same concept;
-- package validation that runs against both the source checkout and the exact npm tarball.
-
-## Canonical entry
-
-```text
-knowledge.md
-```
-
-## Boundary
-
-Memory, retrieval scores, generated summaries, graph edges, and model output are not evidence by themselves.
-
-## Install
+`knowledge` may stand alone as one manually curated corpus:
 
 ```bash
-npx architectonic@latest add knowledge --source npm
-npx architectonic@latest verify
+npx architectonic@latest init my-corpus --preset knowledge --source npm
 ```
 
-Installing a layer provides reusable public structure. Organization-specific facts, private knowledge, credentials, runtime state, and local decisions belong only in controlled workspace instances.
+Use `knowledge-system` when the corpus also needs reusable ingestion, query, audit, and retirement procedures:
 
-## Claims
+```bash
+npx architectonic@latest init my-corpus --preset knowledge-system --source npm
+```
 
-This package claims only that its declared structure and validators are inspectable and reproducible. It does not claim universal performance improvement or domain correctness.
+Add `living-knowledge` only when correctness decays as external sources change independently of your edits.
+
+Canonical Markdown may be accompanied by lexical search, embeddings, databases, graph projections, Obsidian, Graphify, GraphRAG, or other retrieval and visualization tools. Those are replaceable access paths; the corpus and source trail remain authoritative.
+
+See [`WHEN_TO_USE.md`](./WHEN_TO_USE.md) and [`knowledge.md`](./knowledge.md).
