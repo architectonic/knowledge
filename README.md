@@ -1,5 +1,7 @@
 # Knowledge
 
+**Architectonic layer:** [main CLI and adaptive profiles](https://github.com/architectonic/architectonic)
+
 > **Status: experimental, pre-1.0.** This layer organizes disclosed claims, sources, evidence, uncertainty, contradictions, and known unknowns. It does not turn generated synthesis, memory, retrieval scores, or authority into truth.
 
 `knowledge` may stand alone as one manually curated corpus:
